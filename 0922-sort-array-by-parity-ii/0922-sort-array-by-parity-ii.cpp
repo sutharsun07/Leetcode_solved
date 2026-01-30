@@ -13,12 +13,12 @@ public:
         int a=0,b=0;
         for(int i=0;i<nums.size();i++){
             if(i%2==0){
-                ans.push_back(even[a++]);
+                nums[i]=even[a++];
             }
             else{
-                ans.push_back(odd[b++]);
+                nums[i]=odd[b++];
             }
         }
-        return ans;
+        return nums;
     }
 };
