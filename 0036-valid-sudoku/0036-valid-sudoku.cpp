@@ -9,11 +9,11 @@ public:
                     continue;
                 }
                 int bi=(i/3)*3+(j/3);
-                if(r[i].count(a) || c[i].count(a) || b[bi].count(a)){
+                if(r[i].count(a) || c[j].count(a) || b[bi].count(a)){
                     return false;
                 }
                 r[i].insert(a);
-                c[i].insert(a);
+                c[j].insert(a);
                 b[bi].insert(a);
             }
         }
