@@ -8,9 +8,7 @@ public:
                 ans.push_back(nums[i]);
             }
         }
-        for(int i=0;i<ans.size();i++){
-            nums[i]=ans[i];
-        }
+        nums=ans;
         return ans.size();
     }
 };
