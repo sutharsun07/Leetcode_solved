@@ -13,8 +13,8 @@ public:
     }
     int countDigitOccurrences(vector<int>& nums, int digit) {
         int count=0;
-        for(int i=0;i<nums.size();i++){
-            count+=c(nums[i],digit);
+        for(int i: nums){
+            count+=c(i,digit);
         }
         return count;
     }
