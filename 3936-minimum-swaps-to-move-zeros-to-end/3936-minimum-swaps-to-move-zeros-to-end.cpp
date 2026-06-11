@@ -7,15 +7,14 @@ public:
                 count++;
             }
         }
-        int zcount=0;
-        int c=count;
         int j=nums.size()-1;
+        int c=count;
         while(c--){
             if(nums[j] == 0){
-                zcount++;
+                count--;
             }
             j--;
         }
-        return count-zcount;
+        return count;
     }
 };
