@@ -3,7 +3,7 @@ public:
     int missingMultiple(vector<int>& nums, int k) {
         unordered_set<int> ans;
         for(int i=0;i<nums.size();i++){
-            ans.insert(nums[i]);
+            if((nums[i]%k)==0) ans.insert(nums[i]);
         }
         int s=k;
         for(int i=0;i<nums.size();i++){
